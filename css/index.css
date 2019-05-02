@@ -1,6 +1,6 @@
 .border {
-  padding-top: 20px;
-  border-bottom: 4px dashed #C0C0C0;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -146,6 +146,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #212529;
 }
 h1 {
   font-size: 4rem;
@@ -162,6 +163,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  color: #212529;
 }
 img {
   max-width: 100%;
@@ -176,16 +178,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 20px;
+  border-bottom: 4px dashed #C0C0C0;
+  padding-top: 20px;
   padding-right: 2.5%;
   align-items: center;
-  padding-top: 20px;
-  border-bottom: 4px dashed #C0C0C0;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header nav a {
   font-size: 2rem;
   text-decoration: none;
   padding-right: 10px;
+  color: #212529;
+}
+@media (max-width: 515px) {
+  header {
+    flex-direction: column;
+  }
+  header nav a {
+    font-size: 1.5rem;
+  }
 }
 .footer {
   width: 100%;
@@ -203,12 +215,21 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section .hero {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .content-section .hero h2 {
+  margin-top: 20px;
+}
 .home .content-section .text-content {
   width: 48%;
+  padding-top: 30px;
   padding-right: 1%;
 }
 .home .content-section .img-content {
   width: 48%;
+  padding-top: 30px;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
@@ -227,6 +248,7 @@ header nav a {
   padding-left: 0;
 }
 .home .content-destination {
+  padding-top: 30px;
   width: 75%;
   margin: 0 auto 30px;
 }
@@ -238,8 +260,21 @@ header nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background: #17A2B8;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 15px;
+  font-size: 1.8rem;
 }

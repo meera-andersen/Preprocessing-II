@@ -7,17 +7,24 @@
     justify-content: space-between;
 
 
-   .hero {
-      // .border();
-   } 
+  .hero {
+    .border(); 
+
+
+    h2 {
+        margin-top: 20px;
+    }
+  } 
     
     .text-content {
       width: 48%;
+      padding-top: 30px;
       padding-right: 1%;
     }
 
     .img-content {
       width: 48%;
+      padding-top: 30px;
       padding-left: 1%;
 
       img {
@@ -42,6 +49,7 @@
   }
 
   .content-destination {
+    padding-top: 30px;
     width: 75%;
     margin: 0 auto 30px;
 
@@ -55,10 +63,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+    
+    .btn {
+      .custom-button();
     }
   }
 }// home
