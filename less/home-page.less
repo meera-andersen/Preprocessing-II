@@ -7,6 +7,14 @@
     h2 {
         margin-top: 20px;
     }
+
+    @media @phone {
+    h2, p {
+      margin: 5%;
+    }
+
+      
+    }
   } 
 
   .content-section {
@@ -17,15 +25,40 @@
 
     @media @phone {
       flex-direction: column;
-      justify-content: center;
       margin: 5%;
-      width: 100%;
+      width: 95%;
 
       .text-content {
-        width:100%;
+        padding-top: 30px;
+        width: 90%;
+        margin: 0 auto 30px;
       }
+    }
+    @media @phone {
+      flex-direction: column;
+      margin: 5%;
+      width: 95%;
+
+      .content-pick {
+        margin: 5%;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column;
+      margin: 5%;
+      width: 95%;
+
+      .btn {
+        .custom-button(1px;);
+      }
+    }
+
       
-  }
+      
+      
+      
+    } 
 
     
     .text-content {
@@ -43,6 +76,7 @@
         border-radius: 10px;
       }
     }
+
   }
 
   .inverse-content {
@@ -58,6 +92,16 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @phone {
+      flex-direction: column;
+      margin: 5%;
+      width: 95%;
+
+      .img-content {
+        width: 100%;
+      }
+    }
   }
 
   .content-destination {
@@ -69,6 +113,11 @@
       border-radius: 10px;
     }
   }
+  @media @phone {
+    .content-destination {
+      width: 90%;
+    }
+  }
 
   .content-pick {
     padding-top: 30px;
@@ -77,14 +126,33 @@
     justify-content: space-between;
     align-content: center;
     
+    @media @phone {
+      .content-pick {
+        flex-direction: column;
+        margin: 5%;
+      }
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
     
+    @media @phone {
+      .destination {
+        width: 100%;
+        margin: 5%;
+      }
+    }
+    
     .btn {
       .custom-button();
     }
+
+    @media @phone {
+      .btn {
+        .custom-button(400px;);
+      }
+    }
   }
-}// home
+// home
