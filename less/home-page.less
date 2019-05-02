@@ -1,12 +1,5 @@
 .home {
 
-  .content-section {
-    // margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
   .hero {
     .border(); 
 
@@ -15,6 +8,25 @@
         margin-top: 20px;
     }
   } 
+
+  .content-section {
+    // margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+      margin: 5%;
+      width: 100%;
+
+      .text-content {
+        width:100%;
+      }
+      
+  }
+
     
     .text-content {
       width: 48%;
