@@ -2,18 +2,14 @@
 
   .hero {
     .border(); 
-
-
     h2 {
         margin-top: 20px;
     }
 
     @media @phone {
-    h2, p {
-      margin: 5%;
-    }
-
-      
+      h2, p {
+        margin: 5%;
+      }  
     }
   } 
 
@@ -33,22 +29,12 @@
         width: 90%;
         margin: 0 auto 30px;
       }
-    }
-    @media @phone {
-      flex-direction: column;
-      margin: 5%;
-      width: 95%;
 
       .content-pick {
         margin: 5%;
       }
     }
-
-    @media @phone {
-      .btn {
-        .custom-button(1px;);
-      }
-    }
+  }
 
       
       
@@ -78,7 +64,7 @@
       }
     }
 
-  }
+
 
   .inverse-content {
     padding-bottom: 30px;
@@ -136,7 +122,13 @@
       }
     }
 
-    
+    a button .btn {
+      .custom-button();
+
+      @media @phone {
+        .custom-button(400px);
+      }
+    }
     
     .btn {
       .custom-button();
